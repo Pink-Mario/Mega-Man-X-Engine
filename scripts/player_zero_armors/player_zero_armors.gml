@@ -23,17 +23,15 @@ function player_zero_armors() {
 		palette_texture_set(plt_zero_x1);
 		ds_list_clear(special_weapons);
 		dash_dust.y += 5;
-		dash_speed = 4;
+		dash_speed = 8;
 		saber_unlocked = false;
 		shoot_unlocked = true;
-		charge_unlocked = true;
-		charge_level_max = 3;
+		charge_unlocked = false;
+		charge_level_max = 0;
 		charge_limits[3] = charge_limits[2];
 		glow_name = "glow_x1";
 		weapon_allow_pallete = false;
 		player_weapon_set(0, weapons.z_buster);
-		player_weapon_set(1, weapons.homing_torpedo);
-		player_weapon_set(2, weapons.storm_tornado);
 		player_weapon_select(weapons.z_buster);
 		#region Animations
 		/*
